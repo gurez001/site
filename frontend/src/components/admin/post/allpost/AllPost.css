@@ -1,0 +1,10 @@
+.all-post-heading span a{
+    margin-left:20px;
+    background:var(--G-green);
+    padding:10px;
+    color: var(--g-white);
+    
+} 
+.table-grid .MuiDataGrid-columnHeader--alignRight .MuiDataGrid-columnHeaderTitleContainer{
+  justify-content: center;
+}

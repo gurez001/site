@@ -1,0 +1,21 @@
+#Categories-cont .product-card {
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  background-color: #fff;
+}
+.name-bar-cat {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 20px 0;
+}
+.name-bar-cat svg {
+  font-size: 14px;
+}
+.name-bar-cat a,
+.name-bar-cat span {
+  font-size: 20px;
+}

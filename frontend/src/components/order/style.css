@@ -1,0 +1,252 @@
+.my-order-page {
+  width: 100%;
+}
+.my-order-page [role="row"] {
+  transition: all 0.3s ease-in;
+  background: #fff;
+}
+.order-title {
+  margin: 20px 0;
+}
+#order-span {
+  display: inline-grid;
+}
+
+.order-header p {
+  margin: 0px;
+  font-weight: 600;
+}
+
+.order-details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #00000030;
+  gap: 50px;
+}
+.billing-details,
+.pay-mode {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 30px;
+  width: 100%;
+}
+.order-containor > h3 {
+  text-align: center;
+  margin: 20px 0px;
+}
+#order-details {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.order-item-img {
+  max-width: 100px;
+  width: 100%;
+}
+.order-item-name {
+  width: 80%;
+}
+.orders > h2,
+.order-d-page h1 {
+  text-align: center;
+  margin: 10px 0px 30px;
+}
+.Billing-details-area,
+.pay-mod-details {
+  margin: 10px 0;
+}
+.Billing-details-area > p,
+.pay-mod-details > p {
+  margin: 5px 0;
+}
+.order-cont-area {
+  padding: 150px 10px;
+  text-align: center;
+}
+.order-cont-area h1 {
+  margin: 0px 0 30px;
+}
+.order-cont-area a {
+  width: 80%;
+  padding: 15px 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 99px;
+  background: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+.order-cont-area a:hover {
+  background: #e31e25;
+  color: #fff !important;
+}
+
+.order-card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.order-card {
+  width: 100%;
+}
+.order-card-inner-row {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.order-id {
+  text-align: center;
+}
+.order-card-status p {
+  display: flex;
+  justify-content: space-between;
+}
+.order-id span {
+  font-weight: 600;
+  font-size: 16px;
+}
+.order-card-status span {
+  display: block;
+  margin: 10px 0px;
+}
+
+.delivered {
+  background: #04af70;
+}
+.cancle,
+.return {
+  background: #000;
+}
+.cancle span,
+.return span {
+  color: #fff;
+}
+
+/* order page css */
+.overview-ul {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+}
+.overview-item {
+  padding-right: 15px;
+}
+.overview-item {
+  position: relative;
+  font-size: 16px;
+  line-height: calc(2.4rem * var(--rio-typo-ratio, 1));
+}
+
+.overview-item span:nth-child(1) {
+  text-transform: uppercase;
+}
+.overview-item span{
+  display: block;
+}
+.overview-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: block;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 70px;
+  background: #e1e1e1;
+}
+.orders {
+  margin: 40px 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px 30px;
+}
+.order-d-page .order-item {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+.order-li-border p {
+  border: none;
+}
+.order-thank {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.1);
+  font-size: 16px;
+  border-radius: 10px;
+  color: #666;
+  margin: 20px 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.order-thank svg {
+  opacity: 0.8;
+  margin-right: 20px;
+  font-size: 60px;
+  vertical-align: middle;
+  color: var(--G-green);
+}
+.order-thank p {
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+.order-thank p strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #222;
+}
+
+@media screen and (max-width: 768px) {
+  .overview-ul {
+    flex-direction: column;
+    align-items: normal;
+  }
+  li.overview-item {
+    border-bottom: 1px solid #eee;
+  }
+  .order-details {
+    flex-direction: column;
+  }
+  .order-details h2 {
+    font-size: 20px;
+  }
+  .order-thank svg {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .order-card-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .order-card-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .order-card-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,24 @@
+.tab-general{
+    display: flex;
+   margin: 10px;
+   width: 100%;
+}
+
+.tab-left{
+    width: 30%;
+}
+.tab-right{
+    width: 100%;
+}
+.tab-right input,select{
+    padding: 10px;
+    width: 400px;
+}
+#allowFreeShipping, #individualUseOnly, #excludeSaleItems{
+    width: auto;
+}
+
+
+.coupon-tabs .css-35zqo5-MuiTabs-root{
+    min-width: 200px;
+}

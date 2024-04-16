@@ -1,0 +1,181 @@
+.loading-containor {
+  position: relative;
+  background: #fff;
+  height: 400px;
+  width: 100%;
+  z-index: 1;
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  place-items: center;
+  display: grid;
+  max-width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+span.loading-text {
+  position: absolute;
+  font-weight: 600;
+  opacity: 0.5;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.loading > div {
+  width: 10vmax;
+  height: 10vmax;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.719);
+
+  border-radius: 50%;
+
+  animation: loadingRotate 800ms linear infinite;
+}
+
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .loading > div{
+    width: 20vmax;
+  height: 20vmax;
+  }
+}
+
+.wrapper {
+  color: #141823;
+  padding: 20px;
+  padding-bottom: 60px;
+  border: 1px solid #ccc;
+}
+
+.item {
+  background: #fff;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 472px;
+  height: 380px;
+}
+
+.image-box {
+  width: 100%;
+  height: 250px;
+}
+.animated-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: flash;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  position: relative;
+}
+
+.rect1 {
+  max-width: 50%;
+  width: 100%;
+  margin: 10px auto 0;
+  height: 12px;
+}
+
+.rect2 {
+  max-width: 70%;
+  width: 100%;
+  margin: 10px auto 0;
+  height: 17px;
+}
+
+.rect3 {
+  max-width: 100%;
+  width: 100%;
+  margin: 10px auto 0;
+  height: 15px;
+}
+
+.rect4 {
+  max-width: 100%;
+  width: 100%;
+  margin: 10px auto 0;
+  height: 15px;
+}
+
+.rect5 {
+  width: 75%;
+  float: left;
+  top: 110px;
+  left: 25px;
+  margin-top: 10px;
+  height: 10px;
+  position: absolute;
+}
+.col2 {
+  max-width: 70%;
+  width: 100%;
+  height: 15px;
+  margin-top: 18px;
+}
+.col3 {
+  max-width: 100%;
+  width: 100%;
+  height: 12px;
+  margin-top: 12px;
+}
+.col4 {
+  max-width: 50%;
+  width: 100%;
+  height: 55px;
+  margin-top: 12px;
+}
+.col5 {
+  max-width: 90%;
+  width: 100%;
+  height: 100px;
+  margin: 12px auto 0;
+}
+.col6 {
+  max-width: 90%;
+  width: 100%;
+  height: 40px;
+  margin: 12px auto 0;
+}
+.col1 {
+  max-width: 50%;
+  width: 100%;
+  height: 15px;
+  margin-top: 10px;
+}
+.rev-image-box {
+  width: 30%;
+  height: 80px;
+}
+.rev-animation .rect1,
+.rev-animation .rect2,
+.rev-animation .rect3,
+.rev-animation .rect4 {
+  width: 100% !important;
+  max-width: 90%;
+  margin: 0 auto 5px;
+  height: 8px;
+}
+.rev-animation .item {
+  height: auto;
+  max-width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .image-box {
+    height: 200px;
+  }
+  .item {
+    height: 315px;
+  }
+}

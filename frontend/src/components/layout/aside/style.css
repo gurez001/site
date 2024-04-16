@@ -1,0 +1,81 @@
+.full-width .side-bar{
+  padding: 0;
+}
+.side-bar {
+  padding: 0px 20px 0px 10px;
+}
+.inner-aside-filter {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+.inner-aside-filter span {
+  font-weight: 600;
+}
+.parent-cat-list {
+  padding: 15px 0;
+}
+.aside-price-filter {
+  padding: 15px 0;
+}
+.parent-cat-list li a,
+.price-filter-cont p {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #222;
+  font-size: 13px;
+}
+.parent-cat-list li a {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #222;
+  font-size: 13px;
+}
+.category-list .MuiSlider-root{
+  width: 85%;
+  left: 7px;
+}
+.parent-cat-list > li {
+  border-bottom: 1px solid #eee;
+  padding: 5px 0;
+}
+.parent-cat-list > li > div {
+  margin: 7px 0;
+}
+.aside-hr {
+  padding-bottom: 20px;
+  border-bottom: 3px solid #d2d1d1;
+}
+.parent-cat-list li ul {
+  padding: 0px 10px;
+  border-left: 1px solid #eee;
+}
+.parent-cat-list li ul li {
+  padding: 3px 0;
+}
+.aside-price-categories {
+  padding-top: 15px;
+}
+/* //------price----filter */
+
+.category-list {
+  position: relative;
+  overflow: hidden;
+  padding: 0px;
+}
+.category-list > div {
+  transition: all 0.3s ease-in-out;
+}
+.cate-header {
+  position: relative;
+  z-index: 5;
+}
+.cate-header h3 {
+  font-size: 20px;
+}
+.cate-header .col-md-3 svg {
+  opacity: 0.5;
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+}

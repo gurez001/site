@@ -1,0 +1,59 @@
+.dashboard-sidebar {
+  width: 14%;
+  background: #252525;
+}
+.dashboard-sidebar aside {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  position: sticky;
+  top: 100px;
+  z-index: 10;
+}
+.dashboard-sidebar aside a,
+.dashboard-sidebar aside p,
+.dashboard-sidebar .MuiTypography-body1 {
+  color: #fff;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 15px !important;
+  width: 100%;
+}
+.MuiCollapse-wrapperInner a{
+  font-size: 14px !important;
+}
+.MuiTreeItem-label{
+  padding: 0px !important;
+}
+.dashboard-sidebar aside p {
+  margin: 5px 0;
+}
+.dashboard-sidebar aside p:hover svg,
+.MuiTreeView-root:hover svg {
+  color: #e31e25 !important;
+}
+.s-side-row ul {
+  display: flex;
+  margin: 5px 0;
+}
+.s-side-row ul svg {
+  color: #fff;
+}
+.s-side-row p {
+  margin: 0px;
+}
+.s-side-row p a {
+  font-size: 16px;
+}
+.order-pe- {
+  border-radius: 99px;
+  padding: 0px 8px;
+  position: absolute;
+  left: 92px;
+  background: #fff;
+  color: #000;
+}
+.order-tab {
+  position: relative;
+}

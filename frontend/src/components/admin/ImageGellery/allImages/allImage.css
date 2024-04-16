@@ -1,0 +1,41 @@
+.image-gelery-containor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.all-img-cont-containor .ad-section {
+  width: 100%;
+}
+
+/* styles.css */
+/* Style for the Gallery container */
+.all-img-cont-containor .react-photo-gallery--gallery > div {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style for each image in the Gallery */
+.gallery-image {
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for selected images */
+.gallery-image.selected {
+  border: 2px solid #007bff;
+}
+
+.react-photo-gallery-cont {
+  width: 250px !important;
+  height: 250px !important;
+}
+.react-photo-gallery-cont img {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: auto;
+}

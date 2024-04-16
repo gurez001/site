@@ -1,0 +1,37 @@
+#cards-section{
+    background: linear-gradient(-180deg,rgba(234,237,237,0)1%,#f5f5f5 56%);
+    position: relative;
+    z-index: 2;
+}
+.desktop-grid-4-card {
+    background: #fff;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 20px 5px;
+}
+.desktop-grid-4-card:nth-child(4){
+    height:150px;
+    text-align:center;
+}
+.desktop-grid-4-card:nth-child(4) button{
+    background-color: var(--main);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.desktop-grid-4-card:nth-last-child(1) button:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid var(--main);
+}
+.desktop-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+.desktop-grid-2 span{
+    font-size: 14px;
+}

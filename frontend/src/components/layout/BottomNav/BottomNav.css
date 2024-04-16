@@ -1,0 +1,66 @@
+.mob-icon {
+  display: none;
+  justify-content: space-around;
+  padding: 15px 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  opacity: 1;
+  background: white;
+  z-index: 100;
+  z-index: 10000;
+  border-radius: 20px 20px 0 0;
+}
+.mob-icon {
+  position: fixed;
+  width: 100%;
+  bottom: -1%;
+}
+.mega-menu {
+  position: relative;
+}
+.mega-menu .MuiPaper-root {
+  margin: 0px;
+}
+.mega-menu .MuiDialog-paperScrollPaper {
+  max-height: 100% !important;
+}
+.mega-menu .MuiDialogContent-root {
+  padding: 10px !important;
+}
+.mob-navigate .mob-icon span:nth-child(3) a {
+  pointer-events: none;
+}
+.menu-list {
+  position: absolute;
+  bottom: 60px;
+  width: 96%;
+}
+.mob-icon svg {
+  font-size: 24px;
+}
+.bottom-active {
+  color: #31ad32;
+}
+.menu-list ul {
+  justify-content: center;
+}
+.menu-list li {
+  flex: 0 0 auto;
+  margin-right: 5px;
+}
+.menu-list a {
+  background: #fff;
+  display: block;
+  text-align: center;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 3px 16px;
+}
+@media screen and (max-width: 768px) {
+  .mob-icon {
+    display: flex;
+  }
+  .footer {
+    padding: 30px 10px 70px 10px;
+  }
+}

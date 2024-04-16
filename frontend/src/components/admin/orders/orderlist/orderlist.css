@@ -1,0 +1,13 @@
+.all-order-title {
+  text-align: center;
+  margin: 30px 0;
+}
+div[data-field="id"]{
+  position: relative;
+}
+div[data-field="id"]::before{
+  content: '#';
+}
+.orderdata .MuiDataGrid-columnsContainer .MuiDataGrid-columnHeader::before{
+display: none;
+}

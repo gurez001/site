@@ -1,0 +1,48 @@
+.post-tilte input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+.post-anc {
+    display: flex;
+  gap:40px
+}
+.post-anc li{
+    list-style: none;
+}
+.post-anc input{
+    
+    width: auto;
+}
+.post-anc span{
+font-size: 16px;
+}
+/* .post-btn {
+    margin-top: 20px;
+    background: #6dce3e !important;
+    border: #6dce3e !important;
+    font-size: 16px;
+    color: white !important;
+} */
+.from-main-div {
+    display: flex;
+}
+
+.form-main-left{
+    width:70%
+}
+.form-main-left #button{
+   background: var(--G-green);
+   color: var(--g-white);
+   border: var(--G-green);
+   cursor: pointer;
+}
+.form-main-right{
+    width:30%;
+    padding:10px 30px;
+}
+
+
+.right-category input{
+    width:auto
+}

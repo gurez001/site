@@ -1,0 +1,190 @@
+ul.category-ul {
+    border:1px solid #eee
+  }
+
+
+  #stockmanagement,
+#soldIndividually,
+#productpage,
+#variations {
+  width: auto;
+}
+.tab-flex,
+.attribute-tab-flex {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+.attribute-tab-flex input {
+  padding: 5px;
+}
+/* .attribute-tab-flex span {
+  background: #eee;
+  padding: 5px 10px;
+  color: #000;
+  margin: 0px 10px 0 0;
+}
+.attribute-tab-flex button {
+  color: #000;
+  margin: 0px 10px 0 0;
+} */
+.attribute-list .att-btn {
+  width: 184px;
+  padding: 5px;
+  text-align: start;
+  font-size: 12px;
+  opacity: 0.5;
+  border: 1px solid #00000089;
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+}
+.attribute-list {
+  padding: 5px;
+}
+.attribute-list li {
+  cursor: pointer;
+}
+.attribute-list svg {
+  float: right;
+  padding-top: 4px;
+  font-size: 16px;
+}
+.attribute-list ul {
+  padding: 10px 0px;
+}
+.list-border {
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #007cba, 0 -2px 1px rgba(0, 0, 0, 0.1);
+}
+.att-tab-right-label {
+  width: 100%;
+  display: inline-block;
+  padding: 0px;
+}
+.add-label-value {
+  margin: 2px;
+  background: #edeff6;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.add-label-value svg {
+  padding-top: 5px;
+  font-size: 20px;
+  color: red;
+}
+.add-label-value-input {
+  display: inline;
+  padding: 10px;
+}
+.add-label-value-input input {
+  width: auto;
+  margin: 05px 0px;
+  padding: 7px 3px;
+}
+.tab-general {
+  gap: 20px;
+  margin: 10px 0;
+}
+.tab-flex input {
+  width: 125px;
+}
+.attribute-tab {
+  width: 100%;
+}
+.attribute-tab-left {
+  width: 100%;
+}
+.attribute-tab-right {
+  width: 100%;
+}
+#vertical-tabpanel-2 {
+  width: 100%;
+}
+
+.attribute-tab .MuiBox-root .MuiTabs-vertical {
+  width: 148px;
+}
+.attribute-tab .MuiBox-root div[role="tabpanel"] {
+  width: 650px;
+}
+.attribute-tab h2 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.attribute-tab h2 select {
+  padding: 5px 10px;
+}
+.attribute-tab .att-tab-visiable {
+  display: block !important;
+}
+.attribute-tab .att-tab-hide {
+  display: none;
+}
+.attribute-tab-right ul:nth-child(2) {
+  cursor: pointer;
+}
+.attribute-tab-right ul:nth-child(2) li:nth-child(even) {
+  background-color: #edeff6;
+}
+.tab-att-general p {
+  margin: 0px;
+}
+.tab-att-header {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b2b1b117;
+}
+.tab-att-header span:nth-child(1) {
+  color: red;
+  font-size: 14px;
+  cursor: pointer;
+}
+.att-content-area {
+  display: flex;
+  padding: 15px 5px;
+}
+.att-content-area .attribute-tab-left {
+  width: 40%;
+}
+.att-content-area .attribute-tab-right {
+  width: 60%;
+}
+.attribute-tab-left span {
+  font-size: 14px;
+}
+.att-content-tittle {
+  margin-bottom: 10px;
+}
+.att-content-input-box label {
+  cursor: pointer;
+}
+/* -------------Publish Section */
+
+/* .postbox {
+  position: relative;
+  min-width: 255px;
+  border: 1px solid #c3c4c7;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  background: #fff;
+}
+.postbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c3c4c7;
+}
+#poststuff .stuffbox>h3, #poststuff h2, #poststuff h3.hndle {
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.postbox-header .handle-actions {
+  flex-shrink: 0;
+} */

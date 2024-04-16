@@ -1,0 +1,158 @@
+.conf-containor {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.confirm-order-page {
+  width: 100%;
+}
+.con-title {
+  text-align: center;
+  margin: 30px 0;
+}
+.oder-left,
+.oder-right {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.oder-left p,
+.order-summery-conf-area p {
+  margin: 02 0;
+  padding: 10px;
+  display: flex;
+}
+.oder-left p span:nth-child(1),
+.order-summery-conf-area p span:nth-child(1) {
+  font-weight: 600;
+}
+.oder-left p span:nth-child(2),
+.order-summery-conf-area p span:nth-child(2) {
+  text-align: end;
+}
+.oder-left p span,
+.order-summery-conf-area span {
+  width: 50%;
+  display: block;
+}
+.oder-left {
+  background: #fff;
+  padding: 20px;
+  position: sticky;
+  top: 40px;
+  border-radius: 8px;
+}
+.shipping-info {
+  margin-top: 20px;
+}
+.shiping-coupon {
+  margin-bottom: 20px;
+}
+.conf-col {
+  width: 45%;
+  padding: 20px;
+}
+
+.conf-prod-area p,
+.conf-prod-area span {
+  padding: 10px;
+}
+.conf-prod-area p {
+  font-weight: 600;
+}
+
+.conf-prod-area {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #00000030;
+  background: #fff;
+  border-radius: 5px;
+  align-items: center;
+}
+.conf-ing {
+  max-width: 80px;
+  padding: 10px;
+  /* border-right: 1px solid #00000030; */
+}
+.conf-prod-area p {
+  /* width: 80%; */
+  /* border-right: 1px solid #00000030; */
+}
+.conf-prod-area span {
+  font-weight: 600;
+}
+/* .order-summery-conf-area {
+  margin-top: 20px;
+} */
+.order-summery-conf-area p {
+  box-shadow: none !important;
+  border-bottom: 1px solid #00000030;
+}
+.order-summery-conf button {
+  width: 100%;
+  font-weight: 600;
+  padding: 10px 0;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.3s ease-in;
+}
+.addrs-info p,
+.h-us-info p {
+  border-bottom: 1px solid #eee;
+}
+
+/* Apply coupon page */
+
+.apply-coupon {
+  display: flex;
+  gap: 20px;
+}
+.apply-coupon input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+}
+.apply-coupon button {
+  background: var(--G-green);
+  color: var(--g-white);
+  padding: 10px;
+  width: 40%;
+  border: 1px solid var(--G-green);
+}
+.apply-coupon button:hover {
+  background: var(--g-white);
+  color: var(--G-green);
+}
+@media only screen and (max-width: 870px) {
+  .conf-containor {
+    flex-direction: column;
+  }
+  .oder-left {
+    position: unset;
+  }
+  .conf-col {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .order-summery-conf-area p span {
+    width: 50%;
+  }
+  .stepper-main .MuiTypography-body1 {
+    font-size: 12px !important;
+  }
+  .oder-left p span:nth-child(2) {
+    text-align: left;
+  }
+  .oder-left p {
+    flex-direction: column;
+  }
+  .stepper-main .MuiStepper-root {
+    padding: 24px 0px !important;
+  }
+  .shipping-form-containor .shipping-form {
+    gap: 0px;
+    padding: 0px !important;
+  }
+  .conf-col {
+    padding: 0px;
+  }
+}

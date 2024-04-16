@@ -1,0 +1,86 @@
+.shipping-box h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.pay-razor-btn {
+  text-align: center;
+}
+
+.shipping-form-containor {
+  max-width: 700px;
+  margin: 40px auto 20px;
+}
+.shipping-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.shipping-form .input-list{
+  width: 100%;
+}
+.shipping-form .input-list:nth-last-child(2),
+.shipping-form .input-list:nth-last-child(3) {
+  width: 48%;
+}
+.shipping-form input,
+.shipping-form select{
+  height: 40px;
+}
+
+.pay-cont {
+  max-width: 700px;
+  margin: 30px auto;
+}
+.paytitle {
+  text-align: center;
+  margin: 30px 0;
+}
+.payoption {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+}
+.payoption > div {
+  margin: 20px 0;
+}
+.payoption .pay-cod-opt input,
+.payoption .pay-cod-opt label,
+.pay-online input,
+.pay-online label {
+  cursor: pointer;
+}
+.payoption,
+.pay-cod {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pay-cod-btn {
+  text-align: center;
+}
+.pay-cod-btn button {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background: #000000;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.pay-cod-btn button:hover {
+  background: #e31e25;
+  color: #fff;
+}
+.inputTaglist {
+  position: relative;
+}
+.inputTaglist span {
+  position: absolute;
+  left: 7px;
+  top: 11px;
+}
+.inputTaglist input,
+.inputTaglist select {
+  padding-left: 32px !important;
+}
+.inputTaglist select {
+  padding-left: 25px !important;
+}

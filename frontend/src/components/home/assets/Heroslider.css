@@ -1,0 +1,32 @@
+.slider-containor {
+  max-height: 300px;
+}
+.slider-containor img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slider-containor {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider-containor:hover .custom-arrow {
+  display: flex;
+}
+.custom-arrow {
+  position: absolute;
+  z-index: 5;
+  padding: 10px;
+  border-radius: 100px;
+  color: #74c22a;
+  top: 50%;
+  background: linear-gradient(-270deg, rgb(234 237 237 / 25%), #f5f5f5b3);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  transform: translateY(-50%);
+  display: none;
+}
+.custom-next-arrow {
+  right: 0px;
+}

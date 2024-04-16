@@ -1,0 +1,194 @@
+.form-flex {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+.form-fields-area {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+.col-md-6 {
+  width: 50%;
+}
+.flex-warp {
+  flex-wrap: wrap;
+}
+.flex-warp .col-md-6:nth-child(even) {
+  padding-right: 2px;
+}
+.flex-warp .col-md-6:nth-child(odd) {
+  padding-left: 2px;
+}
+.col-md-12 {
+  width: 100%;
+}
+.col-md-6 {
+  width: 50%;
+}
+.form select,
+.form input,
+.form textarea {
+  padding: 0px;
+  max-width: 100%;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: unset;
+  border: #424242 1px solid;
+  width: 100%;
+  color: #424242;
+}
+.form .col-md-12,
+.form .col-md-6 {
+  margin-bottom: 5px;
+}
+.form h2 {
+  margin: 0px;
+}
+.order-flex-right {
+  padding: 0px 0px 0px 15px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.order-form-areax .MuiButtonBase-root {
+  width: 100%;
+}
+.form-hide {
+  display: none;
+}
+.form-input-area {
+  position: relative;
+}
+.edit-order-form {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.edit-order-form svg {
+  cursor: pointer;
+}
+.order-item-area-cont,
+.order-form-area {
+  padding: 40px 0 0;
+  background: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: none;
+}
+.sm-font-size {
+  font-size: 16px !important;
+}
+.order-item-area,
+.order-item-content-area {
+  display: flex;
+  width: 100%;
+  gap: 18px;
+}
+.order-img-area {
+  max-width: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.order-img-area img {
+  width: 100%;
+}
+.order-item-content-area {
+  width: 92%;
+}
+.order-item-name {
+  width: 100%;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  padding: 10px;
+}
+.order-item-price {
+  width: 20%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.order-item-amount-total {
+  /* height:200px; */
+  padding: 40px 20px 0;
+  display: grid;
+  align-items: end;
+  justify-content: end;
+}
+.order-item-amount-total > div {
+  display: flex;
+  width: 250px;
+  gap: 20px;
+  line-height: 25px;
+}
+.order-item-amount-total > div span:nth-child(1) {
+  width: 70%;
+  font-size: 18px;
+}
+.order-item-amount-total > div span:nth-child(2) {
+  width: 30%;
+}
+
+/* update-order */
+.ad-body-full {
+  width: 100% !important;
+}
+.order-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.order-flex-left {
+  width: 70%;
+}
+.order-flex-right {
+  width: 30%;
+}
+.order-totals-items .col-md-6:nth-child(2) {
+  text-align: right;
+}
+.order-totals-items {
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  padding: 1.5em 2em;
+  background: #f8f8f8;
+  line-height: 2em;
+}
+.coupon-code {
+  border: #dfdfdf 1px solid;
+  background: #fff;
+  padding: 2px 20px;
+  font-size: 14px;
+}
+.thumb {
+  max-width: 100px;
+  padding: 4px;
+}
+.thumb img {
+  max-width: 100px;
+  height: 80px;
+  object-fit: cover;
+  width: 100%;
+}
+.postbox {
+  padding: 0px;
+  overflow: hidden;
+}
+.postbox-header {
+  padding: 15px 20px;
+  background: rgb(248 248 248);
+}
+.postbox-inner {
+  padding: 15px 20px;
+}
+.col-md-8 {
+  width: 70%;
+}
+.col-md-2 {
+  width: 10%;
+}

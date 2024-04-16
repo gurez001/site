@@ -1,0 +1,15 @@
+.attribute-left {
+  width: 40%;
+}
+.attribute-right {
+  width: 60%;
+  padding: 20px;
+}
+.attribute-input {
+  margin: 20px 0;
+}
+.attribute-input input,
+select {
+  width: 100%;
+  padding: 10px;
+}

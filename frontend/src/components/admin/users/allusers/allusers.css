@@ -1,0 +1,27 @@
+.all-user-cont h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.all-user-cont .MuiDataGrid-columnHeader--sortable[data-field="role"],
+.all-user-cont .MuiDataGrid-columnHeader[data-field="action"] {
+  width: 20px !important;
+  min-width: 150px !important;
+}
+.MuiDataGrid-cell[data-field="action"] {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around !important;
+}
+
+.MuiDataGrid-cell[data-field="action"] span svg {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  font-size: 18px;
+}
+.MuiDataGrid-cell[data-field="action"] span svg:hover {
+  color: #e31e25 !important;
+}
+.MuiDataGrid-main {
+  background-color: #fff;
+}

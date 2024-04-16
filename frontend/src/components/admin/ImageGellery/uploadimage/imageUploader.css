@@ -1,0 +1,48 @@
+.showTab {
+  display: block;
+}
+.hideTab {
+  display: none;
+}
+.tab-dialog .MuiDialog-container .MuiDialog-paperWidthSm {
+  width: 100% !important;
+  max-width: 1200px !important;
+  height: 80%;
+}
+
+.tab-dialog .MuiDialog-paperScrollPaper {
+  max-height: calc(100% - 0px);
+}
+.tabs {
+  display: flex;
+  gap: 40px;
+}
+/* .input-img-area-list{
+    position: relative;
+} */
+.gellery-details p span {
+  display: block;
+}
+.gellery-details p span:nth-child(1) {
+  font-weight: 600;
+  font-size: 18px;
+}
+.gellery-details p {
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+}
+.gellery-details-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+}
+.gellery-details-form input {
+  padding: 5px 5px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.gellery-details-form div {
+  margin: 10px 0;
+}

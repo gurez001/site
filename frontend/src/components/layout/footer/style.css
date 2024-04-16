@@ -1,0 +1,144 @@
+.footer {
+  background: #222222;
+  padding: 30px 10px 10px 10px;
+}
+.foot-col {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  flex-basis: 25%;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.foot-col h4 {
+  font-size: 20px !important;
+}
+.foot-col p,
+.foot-col li {
+  margin-bottom: 10px !important;
+}
+.foot {
+  width: 25%;
+}
+.social-div {
+  width: 150px;
+}
+
+.social-link-row svg {
+  margin: 0 5px;
+  font-size: 20px;
+}
+.footer .foot-list {
+  padding: 0px;
+}
+/* ---------------newsletter */
+
+.foot-news-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.footer-logo img {
+  width: 150px;
+}
+.footer-newaletter-form {
+  display: flex;
+  gap: 15px;
+  background: transparent;
+}
+.footer-newsletter input {
+  padding: 15px;
+  background: #2c2c2c;
+  outline: none;
+  border: none;
+}
+.footer-newsletter input:focus {
+  color: white;
+}
+
+.footer-newsletter input[type="submit"] {
+  background: var(--G-green);
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+.newsletter-main h2 {
+  color: #fff;
+}
+.newsletter-main p {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 1.23;
+  text-transform: none;
+}
+
+.footer-logo {
+  width: 20%;
+}
+.newsletter-main {
+  width: 35%;
+}
+.footer-newsletter {
+  width: 45%;
+}
+#news-email {
+  width: 100% !important;
+}
+.footer h3 {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.footer p span,
+.footer p span a,
+.footer li a {
+  color: #999999;
+  font-size: 14px;
+  padding-right: 10px;
+}
+.rights p{
+  color: #999999;
+  font-size: 14px;
+  padding: 20px 0;
+  margin: 0px;
+}
+.social-link-row a:nth-child(1) {
+  color: #27c;
+}
+.social-link-row a:nth-child(2) {
+  color: #cc1818;
+}
+.social-link-row a:nth-child(3) {
+  color: skyblue;
+}
+/* .footer-newaletter-form input{
+  width: 100%;
+} */
+
+@media only screen and (max-width: 767px) {
+  .foot-col {
+    flex-direction: column;
+  }
+  .footer-newsletter,
+  .newsletter-main,
+  .footer-logo {
+    width: 100%;
+  }
+  .footer-newaletter-form {
+    flex-direction: column;
+  }
+  .foot {
+    width: 100%;
+  }
+  .foot-news-col {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
