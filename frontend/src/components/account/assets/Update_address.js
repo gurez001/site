@@ -4,6 +4,7 @@ import {
   shipping_address_info,
   update_shipping_address_info,
 } from "../../../actions/OrderAction";
+import { State, City } from "country-state-city";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
 import { UPDATE_SHIPPING_ADDRESS_INFO_RESET } from "../../../constants/OrderConstants";
@@ -176,10 +177,13 @@ const Update_address = () => {
                   native: true,
                 }}
               >
-                {" "}
-                <option value="Select one">Select one</option>
-                <option value="Haryana">Haryana</option>
-                <option value="Other">Other</option>
+                <option value="">Select state</option>
+                {State &&
+                  State.getStatesOfCountry("IN").map((item, i) => (
+                    <option key={i} value={item.isoCode}>
+                      {item.name}
+                    </option>
+                  ))}
               </TextField>
               <TextField
                 margin="normal"
@@ -197,10 +201,13 @@ const Update_address = () => {
                   native: true,
                 }}
               >
-                {" "}
-                <option value="Select one">Select one</option>
-                <option value="Karnal">Karnal</option>
-                <option value="Other">Other</option>
+                <option value="">Select state</option>
+                {City &&
+                  City.getCitiesOfState("IN", input_value.state).map((item, i) => (
+                    <option key={i} value={item.name}>
+                      {item.name}
+                    </option>
+                  ))}
               </TextField>
 
               <TextField
