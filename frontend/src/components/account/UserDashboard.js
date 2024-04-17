@@ -2,20 +2,19 @@ import React, { useState } from "react";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { OrderMe } from "../../order/OrderMe";
-import { Shipping } from "../../shipping/Shipping";
-import ShippingDetails from "../../order/assets/ShippingDetails";
+import { OrderMe } from "../order/OrderMe";
+import { Shipping } from "../shipping/Shipping";
+import ShippingDetails from "../order/assets/ShippingDetails";
 import {
   getOrderDetails,
   order_shipping_info,
-} from "../../../actions/OrderAction";
-import { get_payment_info } from "../../../actions/Paymentaction";
-import { LogoutUser } from "../../../actions/UserAction";
-import { Account } from "../Account";
-import PasswordUpdate from "./PasswordUpdate";
-import { UpdateProfile } from "./UpdateProfile";
-import Update_address from "./Update_address";
-
+} from "../../actions/OrderAction";
+import { get_payment_info } from "../../actions/Paymentaction";
+import { LogoutUser } from "../../actions/UserAction";
+import PasswordUpdate from "./assets/PasswordUpdate";
+import { UpdateProfile } from "./assets/UpdateProfile";
+import Update_address from "./assets/Update_address";
+import "./account.css";
 const UserDashboard = () => {
   const [activeTab, setActiveTab] = useState(0);
 

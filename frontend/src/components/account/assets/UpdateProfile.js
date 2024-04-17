@@ -30,7 +30,7 @@ export const UpdateProfile = () => {
   const { loading, isUpdated, error } = useSelector((state) => state.profile);
 
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [user_id, setuser_id] = useState("");
   const [avatarPreview, setAvatarPreview] = useState("./favicon.ico");
   const [avatar, setAvatar] = useState([]);
   const [files, setFiles] = useState([]);
@@ -53,13 +53,13 @@ export const UpdateProfile = () => {
 
   const updateProfileBtn = (e) => {
     e.preventDefault();
-    dispatch(updateUserProfile(name, email, files ? files : avatarPreview));
+    dispatch(updateUserProfile(name, user_id, files ? files : avatarPreview));
   };
 
   useEffect(() => {
     if (user) {
       setName(user.name);
-      setEmail(user.email);
+      setuser_id(user.user_id);
       setAvatarPreview(user && user.avatar ? user.avatar : "/icon.png");
     }
     if (error) {
@@ -126,15 +126,15 @@ export const UpdateProfile = () => {
                       <TextField
                         margin="normal"
                         required
-                        type="email"
+                        type="user_id"
                         fullWidth
-                        id="email"
-                        label="Email"
-                        name="email"
-                        autoComplete="email"
+                        id="user_id"
+                        label="Email & Phone no"
+                        name="user_id"
+                        autoComplete="user_id"
                         autoFocus
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        value={user_id}
+                        onChange={(e) => setuser_id(e.target.value)}
                       />
 
                       <img

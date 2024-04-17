@@ -71,7 +71,7 @@ import BlogCategoryPage from "./components/blog/blogcategorypage/BlogCategoryPag
 import UpdateAttribute from "./components/admin/products/attribute/update/UpdateAttribute";
 import UpdateAttributeLabel from "./components/admin/products/attribute/label/update/UpdateAttributeLabel";
 import GetContactDetails from "./components/admin/contact/GetContactDetails";
-import UserDashboard from "./components/account/assets/UserDashboard";
+import UserDashboard from "./components/account/UserDashboard";
 import CouponUpdate from "./components/admin/marketing/update/CoupenUpdate ";
 import SubCategory from "./components/shop/subcategory/SubCategory";
 import Login_Form from "./components/user/Login_Form";
