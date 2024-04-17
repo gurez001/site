@@ -1,23 +1,35 @@
 const mongoose = require("mongoose");
 
 const banner_setting_schema = new mongoose.Schema({
-  Banner_setting_id: {
+  banner_setting_uuid: {
     type: String,
+    default: null,
   },
-  Banner_setting_name: {
+  banner_setting_id: {
     type: String,
-
-    unique: true,
+    default: null,
   },
-  Banner_setting_images: [
+  banner_setting_name: {
+    type: String,
+    default: null,
+  },
+  banner_setting_images: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "SubCategore",
     },
   ],
-
-  description: {
+  banner_setting_limit: {
+    type: Number,
+    default: null,
+  },
+  banner_setting_status: {
     type: String,
+    default: "Active",
+  },
+  is_deleted: {
+    type: String,
+    default: "No",
   },
   user: {
     type: Number,
@@ -27,6 +39,10 @@ const banner_setting_schema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
+  is_updated: {
+    type: Date,
+    default: null,
+  },
 });
 
-module.exports = mongoose.model("Banner_setting", banner_setting_schema);
+module.exports = mongoose.model("banner_setting", banner_setting_schema);

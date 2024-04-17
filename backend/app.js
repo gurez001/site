@@ -64,6 +64,7 @@ const contactrouter = require("./routes/ContactRoute");
 const bookmarkrouter = require("./routes/BookmarkRoute");
 const postMetaRout = require("./routes/PostMetaRout");
 const subscription_route = require("./routes/subscription_route");
+const banner_setting_router = require("./routes/banner_setting_router");
 
 app.use("/api/v1/", subscription_route);
 app.use("/api/v1/", productRouter);
@@ -81,6 +82,7 @@ app.use("/api/v1", blogcommentrouter);
 app.use("/api/v1", contactrouter);
 app.use("/api/v1", bookmarkrouter);
 app.use("/api/v1", postMetaRout);
+app.use("/api/v1", banner_setting_router);
 
 //-- Middleware for err
 const errMiddleware = require("./middleware/error");

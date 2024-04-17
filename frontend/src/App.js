@@ -76,6 +76,8 @@ import CouponUpdate from "./components/admin/marketing/update/CoupenUpdate ";
 import SubCategory from "./components/shop/subcategory/SubCategory";
 import Login_Form from "./components/user/Login_Form";
 import SignUp_Form from "./components/user/SignUp_Form";
+import Banners from "./components/admin/Home/banners/Banners";
+import Add_New_Banner from "./components/admin/Home/banners/Add_New_Banner";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -222,6 +224,18 @@ function App() {
                   path="/admin/post/update/:id"
                   element={
                     <ProtectedRoute isAdmin={true} Component={UpdatePost} />
+                  }
+                />
+                <Route
+                  path="/admin/home/banner"
+                  element={
+                    <ProtectedRoute isAdmin={true} Component={Banners} />
+                  }
+                />
+                <Route
+                  path="/admin/home/add-banner"
+                  element={
+                    <ProtectedRoute isAdmin={true} Component={Add_New_Banner} />
                   }
                 />
                 <Route

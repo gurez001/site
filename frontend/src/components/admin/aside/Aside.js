@@ -59,6 +59,16 @@ export const Aside = () => {
               </p>
               <TreeView>
                 <span>
+                  <GrContact />
+                </span>
+                <TreeItem nodeId="1" label="Home">
+                  <NavLink to={"/admin/home/banner"}>
+                    <TreeItem nodeId="2" label="Banner" />
+                  </NavLink>
+                </TreeItem>
+              </TreeView>
+              <TreeView>
+                <span>
                   <GrGallery />
                 </span>
                 <TreeItem nodeId="1" label="Media">

@@ -17,53 +17,25 @@ const HeroSlider = () => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
-
+  const images = [
+    "https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/J23_P3B_PC_NTA_Hero_2x_V1._CB573767479_.jpg",
+    "https://images-eu.ssl-images-amazon.com/images/G/31/saba/phase2nov1/5300-Kitchen---3-pc-hero-jupiter-2_3000X1200_bank-2_1._CB573749466_.jpg",
+    "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Hero/cam/MMe/Phase_3_Tallhero_3000x1200._CB573749545_.jpg",
+    "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/Jupiter/JupiterGW/P3_Diwali-lights_PC_3000x1200_UNREC_BankStripB._CB573763526_.jpg",
+    "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/CEPC_soundbars_speakers/Phase_3_ELP_Fold/Phase_3_Tallhero_3000x12001._CB573744264_.jpg",
+    "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Toys/GW/Jupiter2023GW/Phase3/UNREC-RIDEON-BANK-B-2X-1stNov._CB573763182_.jpg",
+    "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Toys/GW/Jupiter2023GW/Phase3/OUTDOOR-BANK-B-2X-1stNov._CB573762852_.jpg",
+  ];
   return (
     <section>
       <div className="slider-containor">
         <Slider {...settings}>
-          <div>
-            <img
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/J23_P3B_PC_NTA_Hero_2x_V1._CB573767479_.jpg"
-              alt="d"
-            />
-          </div>
-          <div>
-            <img
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/saba/phase2nov1/5300-Kitchen---3-pc-hero-jupiter-2_3000X1200_bank-2_1._CB573749466_.jpg"
-              alt="d"
-            />
-          </div>
-          <div>
-            <img
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Hero/cam/MMe/Phase_3_Tallhero_3000x1200._CB573749545_.jpg"
-              alt="d"
-            />
-          </div>
-          <div>
-            <img
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/Jupiter/JupiterGW/P3_Diwali-lights_PC_3000x1200_UNREC_BankStripB._CB573763526_.jpg"
-              alt="d"
-            />
-          </div>
-          <div>
-            <img
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/CEPC_soundbars_speakers/Phase_3_ELP_Fold/Phase_3_Tallhero_3000x12001._CB573744264_.jpg"
-              alt="d"
-            />
-          </div>
-          <div>
-            <img
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Toys/GW/Jupiter2023GW/Phase3/UNREC-RIDEON-BANK-B-2X-1stNov._CB573763182_.jpg"
-              alt="d"
-            />
-          </div>
-          <div>
-            <img
-              src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Toys/GW/Jupiter2023GW/Phase3/OUTDOOR-BANK-B-2X-1stNov._CB573762852_.jpg"
-              alt="d"
-            />
-          </div>
+          {images &&
+            images.map((item, i) => (
+              <div>
+                <img src={item} alt="d" />
+              </div>
+            ))}
         </Slider>
       </div>
     </section>
